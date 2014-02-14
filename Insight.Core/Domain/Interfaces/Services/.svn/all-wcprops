@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services
+END
+IUserServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IUserServices.cs
+END
+IServiceLevelAgreementServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IServiceLevelAgreementServices.cs
+END
+IIndustryTypeServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IIndustryTypeServices.cs
+END
+IEquipmentServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IEquipmentServices.cs
+END
+IPageViewServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IPageViewServices.cs
+END
+ISecurityServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/ISecurityServices.cs
+END
+IAttachmentServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DPProjects/!svn/ver/447/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IAttachmentServices.cs
+END
+IContactServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IContactServices.cs
+END
+IAccountServices.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Services/IAccountServices.cs
+END

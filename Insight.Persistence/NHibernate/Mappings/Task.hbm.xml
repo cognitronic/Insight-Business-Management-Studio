@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Task" table="Tasks">
+        <id name="ID" column="taskid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="Title" />
+        <property name="Description" />
+        <property name="StatusID" column="status"  />
+        <property name="PriorityID" column="priority"/>
+        <property name="AssignedToID" column="assignedto" />
+        <property name="StartDate" />
+        <property name="DueDate" />
+        <property name="DateCompleted" />
+        <property name="DepartmentID" />
+        <property name="EstimatedDuration" />
+        <property name="ActualDuration" />
+        <property name="EnteredByID" column="enteredby" />
+        <property name="ChangedByID" column="changedby" />
+        <property name="ProjectID" />
+        <property name="AccountID" />
+        <property name="LastUpdated" />
+        <property name="Acknowledged" />
+        <property name="IsCustomerViewable" />
+        <property name="BillingNote" />
+        <property name="IsPrivate" />
+        <property name="DateCreated" />
+        <property name="AccountContactID"/>
+        <property name="DescriptionNoHTML"/>
+    </class>
+
+</hibernate-mapping>

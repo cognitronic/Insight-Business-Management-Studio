@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Order" table="OrderHeaders">
+        <id name="ID" column="orderheaderid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="OrderStatusID" />
+        <property name="AccountID" />
+        <property name="OrderDate"  />
+        <property name="IsTaxExempt" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="Notes" />
+        <property name="AccountContactID" />
+        <property name="RequestedBy" />
+        <property name="ClientPO" />
+        <property name="TotalCost" />
+        <property name="TotalSale" />
+        <property name="TotalProfit" />
+        <property name="Title" />
+        <many-to-one name="Account" class="Insight.Core.Domain.Account, Insight.Core" column="AccountID" />
+        <many-to-one name="Status" class="Insight.Core.Domain.OrderStatus, Insight.Core" column="OrderStatusID" />
+        <many-to-one name="RequestedByUser" class="Insight.Core.Domain.User, Insight.Core" column="RequestedBy" />
+        <many-to-one name="Contact" class="Insight.Core.Domain.Contact, Insight.Core" column="AccountContactID" />
+        <bag name="OrderDetails" table="OrderDetails" generic="true" lazy="true" inverse="true" cascade="all">
+            <key column="OrderHeaderID" />
+            <one-to-many class="Insight.Core.Domain.OrderDetail, Insight.Core" />
+        </bag>
+    </class>
+
+</hibernate-mapping>

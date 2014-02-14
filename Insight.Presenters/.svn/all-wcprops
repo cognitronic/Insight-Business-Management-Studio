@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters
+END
+InsightListViewEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightListViewEventArgs.cs
+END
+FiltersPropertiesPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/FiltersPropertiesPresenter.cs
+END
+UserPropertiesPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/UserPropertiesPresenter.cs
+END
+GridListType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/GridListType.cs
+END
+InsightFiltersViewArg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightFiltersViewArg.cs
+END
+ListToolBarPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ListToolBarPresenter.cs
+END
+AdminDashboardPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/AdminDashboardPresenter.cs
+END
+UserHistoryLinksPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/UserHistoryLinksPresenter.cs
+END
+MasterPageHeaderPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/MasterPageHeaderPresenter.cs
+END
+Insight.Presenters.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/Insight.Presenters.csproj
+END
+InsightLinkButtonArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightLinkButtonArgs.cs
+END
+PresenterTypeAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/PresenterTypeAttribute.cs
+END
+InsightToolBarButtonClickedArg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightToolBarButtonClickedArg.cs
+END
+MessageBus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/MessageBus.cs
+END
+PageManagerPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/PageManagerPresenter.cs
+END
+LoginPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/LoginPresenter.cs
+END
+PageViewArg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/PageViewArg.cs
+END
+DashboardToolBarPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/DashboardToolBarPresenter.cs
+END
+UserListPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/UserListPresenter.cs
+END
+InsightGridArg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightGridArg.cs
+END
+FilterOptionsCollectionPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/FilterOptionsCollectionPresenter.cs
+END
+QuicklinksPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DPProjects/!svn/ver/447/trunk/Insight/Insight.Presenters/QuicklinksPresenter.cs
+END
+Insight.Presenters.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/Insight.Presenters.csproj.user
+END
+PresentationManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/PresentationManager.cs
+END
+Presenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/Presenter.cs
+END
+PropertiesToolBarPresenter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/PropertiesToolBarPresenter.cs
+END
+InsightGridItemEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/InsightGridItemEventArgs.cs
+END

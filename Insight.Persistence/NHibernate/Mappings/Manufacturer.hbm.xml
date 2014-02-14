@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Manufacturer" table="Manufacturers">
+        <id name="ID" column="manufacturerid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="ManufacturerName" column="manufacturer" />
+        <property name="Address1" />
+        <property name="Address2"  />
+        <property name="City" />
+        <property name="State" />
+        <property name="Zip" />
+        <property name="Phone" />
+        <property name="Fax" />
+        <property name="Website" />
+        <property name="Comments" />
+        <property name="IsActive" />
+    </class>
+
+</hibernate-mapping>

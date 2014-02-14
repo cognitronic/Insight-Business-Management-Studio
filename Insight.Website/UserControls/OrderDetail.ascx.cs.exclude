@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using IdeaSeed.Web.UI;
+using Insight.Core.Domain;
+using Insight.Persistence.Repositories;
+using Insight.Services;
+using System.Configuration;
+using System.Text;
+using Telerik.Web.UI;
+using IdeaSeed.Core.Web;
+
+[ViewStateModeById]
+public partial class UserControls_OrderDetail : System.Web.UI.UserControl, IWebUserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            lbAddDetail.Attributes.Add("onclick", string.Format("ModalOpenClicked('{0}Modals/Modal/ManageOrderDetail', 600, 400); return false;", Request.Url.GetLeftPart(UriPartial.Authority) + VirtualPathUtility.ToAbsolute("~/")));
+        }
+    }
+
+    #region IWebUserControl Members
+
+    public Insight.Core.Domain.Page CurrentPage { get; set; }
+
+    public int CurrentUserID { get; set; }
+
+    public void LoadData()
+    {
+        LoadDetails(true);
+    }
+
+    protected void DetailsNeedDataSource(object o, GridNeedDataSourceEventArgs e)
+    {
+        LoadDetails(false);
+    }
+
+    protected void DetailsItemCommand(object o, GridCommandEventArgs e)
+    {
+
+    }
+
+    private void LoadDetails(bool bindData)
+    {
+        rgDetails.DataSource = HttpContextHelper.Get<Order>("CurrentOrder").OrderDetails;
+        if (bindData)
+        {
+            rgDetails.DataBind();
+        }
+    }
+
+    #endregion
+}

@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Insight.Core.Interfaces;
+using Insight.Core.Domain;
+
+[ViewStateModeById]
+public partial class UserControls_ManageOrderDetail : System.Web.UI.UserControl, IWebUserControl
+{
+    #region Properties
+    public Insight.Core.Domain.Page CurrentPage { get; set; }
+
+    public int CurrentUserID { get; set; }
+
+    #endregion
+
+    #region Events
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void RBLSelectedIndexChanged(object o, EventArgs e)
+    { 
+        
+    }
+
+    protected void NewDetailSelectedIndexChanged(object o, EventArgs e)
+    { 
+        
+    }
+
+    #endregion
+
+    #region Methods
+
+    public void LoadData()
+    { 
+        
+    }
+    #endregion
+}

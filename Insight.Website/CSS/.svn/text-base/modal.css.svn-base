@@ -1,0 +1,67 @@
+﻿* 
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #000000;
+	background: #ffffff url(/Images/modalbg.png)  repeat-x top left;
+}
+
+img 
+{
+	border: none;
+}
+
+hr
+{
+    color: #d7e2f3;
+}
+
+a
+{
+	color:#1e3287;
+    text-decoration:none;
+}
+
+a:hover
+{
+	color:#7393c2;
+    text-decoration:none;
+}
+
+
+.lightblue
+{
+    color:#fb8409;
+}
+
+.mainContainer
+{
+    margin: 20px; 
+    min-height: 200px; 
+    min-width: 600px;
+    max-width: 1000px;
+}
+
+.clear
+{
+    clear:both;
+    width:100%;
+    line-height:0px;
+    height:0px;
+    display:block;
+}
+
+.actionLinks
+{
+    margin-top: 30px;
+    margin-left: 10px; 
+}
+
+.actionLinks span
+{
+    padding-right: 20px;
+}

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Product" table="Products">
+        <id name="ID" column="productid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="ProductTypeID"/>
+        <property name="PartNumber" />
+        <property name="Description"  />
+        <property name="InternalSKU" />
+        <property name="IsActive" />
+        <property name="UnitID" />
+        <property name="UnitPrice" />
+        <property name="RetailPrice" />
+        <property name="Markup" />
+        <property name="ManufacturerID" />
+        <property name="Model" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="QtyInStock" />
+    </class>
+</hibernate-mapping>

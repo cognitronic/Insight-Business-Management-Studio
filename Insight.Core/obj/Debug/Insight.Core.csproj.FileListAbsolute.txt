@@ -1,0 +1,17 @@
+D:\Projects\Insight\Insight.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Insight\Insight.Core\bin\Debug\Insight.Core.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\Insight.Core.pdb
+D:\Projects\Insight\Insight.Core\bin\Debug\IdeaSeed.Core.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\IdeaSeed.Web.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\NHibernate.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\Iesi.Collections.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\log4net.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\IdeaSeed.Core.pdb
+D:\Projects\Insight\Insight.Core\bin\Debug\IdeaSeed.Web.pdb
+D:\Projects\Insight\Insight.Core\bin\Debug\NHibernate.xml
+D:\Projects\Insight\Insight.Core\bin\Debug\Iesi.Collections.xml
+D:\Projects\Insight\Insight.Core\bin\Debug\log4net.xml
+D:\Projects\Insight\Insight.Core\obj\Debug\Insight.Core.dll
+D:\Projects\Insight\Insight.Core\obj\Debug\Insight.Core.pdb
+D:\Projects\Insight\Insight.Core\bin\Debug\Telerik.Web.UI.dll
+D:\Projects\Insight\Insight.Core\bin\Debug\Telerik.Web.UI.xml

@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.ConsoleApp", "Insight.ConsoleApp\Insight.ConsoleApp.csproj", "{79F2FE80-B39B-4545-ABA7-ECACE9FE3230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Core", "Insight.Core\Insight.Core.csproj", "{B3AC4968-F755-4881-9CA8-C56C082B3B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Persistence", "Insight.Persistence\Insight.Persistence.csproj", "{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Insight.Website", "Insight.Website\", "{9DD14691-997C-4F04-95D5-118BB18778D9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{B3AC4968-F755-4881-9CA8-C56C082B3B3C}|Insight.Core.dll;{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}|Insight.Persistence.dll;{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}|Insight.Web.dll;{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}|Insight.Services.dll;{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}|Insight.Presenters.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Insight.Website"
+		Debug.AspNetCompiler.PhysicalPath = "Insight.Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Insight.Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Insight.Website"
+		Release.AspNetCompiler.PhysicalPath = "Insight.Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Insight.Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52382"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Web", "Insight.Web\Insight.Web.csproj", "{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.PersistenceTests", "Insight.PersistenceTests\Insight.PersistenceTests.csproj", "{8CAF1236-D5A5-4A85-A3FD-F198C96E4BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Services", "Insight.Services\Insight.Services.csproj", "{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.Presenters", "Insight.Presenters\Insight.Presenters.csproj", "{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insight.PresenterTests", "Insight.PresenterTests\Insight.PresenterTests.csproj", "{F920C0CA-9D5D-47B6-AF66-4C7E33ACFEAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F2FE80-B39B-4545-ABA7-ECACE9FE3230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F2FE80-B39B-4545-ABA7-ECACE9FE3230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F2FE80-B39B-4545-ABA7-ECACE9FE3230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F2FE80-B39B-4545-ABA7-ECACE9FE3230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AC4968-F755-4881-9CA8-C56C082B3B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AC4968-F755-4881-9CA8-C56C082B3B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AC4968-F755-4881-9CA8-C56C082B3B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AC4968-F755-4881-9CA8-C56C082B3B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD14691-997C-4F04-95D5-118BB18778D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD14691-997C-4F04-95D5-118BB18778D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD14691-997C-4F04-95D5-118BB18778D9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD14691-997C-4F04-95D5-118BB18778D9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CAF1236-D5A5-4A85-A3FD-F198C96E4BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAF1236-D5A5-4A85-A3FD-F198C96E4BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAF1236-D5A5-4A85-A3FD-F198C96E4BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAF1236-D5A5-4A85-A3FD-F198C96E4BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F920C0CA-9D5D-47B6-AF66-4C7E33ACFEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F920C0CA-9D5D-47B6-AF66-4C7E33ACFEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F920C0CA-9D5D-47B6-AF66-4C7E33ACFEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F920C0CA-9D5D-47B6-AF66-4C7E33ACFEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

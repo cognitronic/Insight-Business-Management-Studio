@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insight.Presenters</RootNamespace>
+    <AssemblyName>Insight.Presenters</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountListPresenter.cs" />
+    <Compile Include="Accounts\AccountPropertiesPresenter.cs" />
+    <Compile Include="Accounts\AddressListPresenter.cs" />
+    <Compile Include="Accounts\AddressPropertiesPresenter.cs" />
+    <Compile Include="Accounts\ContactAddressListPresenter.cs" />
+    <Compile Include="Accounts\ContactAddressPropertiesPresenter.cs" />
+    <Compile Include="Accounts\ContactEmailListPresenter.cs" />
+    <Compile Include="Accounts\ContactEmailPropertiesPresenter.cs" />
+    <Compile Include="Accounts\ContactListPresenter.cs" />
+    <Compile Include="Accounts\ContactPropertiesPresenter.cs" />
+    <Compile Include="GlobalEventEventArgs.cs" />
+    <Compile Include="GridListType.cs" />
+    <Compile Include="ILoadPageContent.cs" />
+    <Compile Include="InsightGridItemEventArgs.cs" />
+    <Compile Include="InsightFiltersViewArg.cs" />
+    <Compile Include="InsightGridArg.cs" />
+    <Compile Include="DashboardToolBarPresenter.cs" />
+    <Compile Include="InsightLinkButtonArgs.cs" />
+    <Compile Include="InsightToolBarButtonClickedArg.cs" />
+    <Compile Include="ListToolBarPresenter.cs" />
+    <Compile Include="MasterPageHeaderPresenter.cs" />
+    <Compile Include="MessageBus.cs" />
+    <Compile Include="PageManagerPresenter.cs" />
+    <Compile Include="PageViewArg.cs" />
+    <Compile Include="PropertiesToolBarPresenter.cs" />
+    <Compile Include="QuicklinksPresenter.cs" />
+    <Compile Include="UserHistoryLinksPresenter.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IAccountListView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IAccountPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IAddressListView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IAddressPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactAddressListView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactAddressPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactEmailListView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactEmailPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactListView.cs" />
+    <Compile Include="ViewInterfaces\Accounts\IContactPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\IBaseListView.cs" />
+    <Compile Include="ViewInterfaces\IBasePropertiesView.cs" />
+    <Compile Include="ViewInterfaces\IDashboardToolBarView.cs" />
+    <Compile Include="ViewInterfaces\IListToolBarView.cs" />
+    <Compile Include="ViewInterfaces\IMasterPageHeaderView.cs" />
+    <Compile Include="ViewInterfaces\IPageManagerView.cs" />
+    <Compile Include="ViewInterfaces\IPropertiesToolBarView.cs" />
+    <Compile Include="ViewInterfaces\IPropertiesView.cs" />
+    <Compile Include="ViewInterfaces\IQuicklinksView.cs" />
+    <Compile Include="ViewInterfaces\IUserHistoryLinksView.cs" />
+    <Compile Include="ViewInterfaces\IView.cs" />
+    <Compile Include="PresentationManager.cs" />
+    <Compile Include="Presenter.cs" />
+    <Compile Include="PresenterTypeAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityPages\LoginPresenter.cs" />
+    <Compile Include="ViewInterfaces\UtilityPages\ILoginView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insight.Core\Insight.Core.csproj">
+      <Project>{B3AC4968-F755-4881-9CA8-C56C082B3B3C}</Project>
+      <Name>Insight.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Services\Insight.Services.csproj">
+      <Project>{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}</Project>
+      <Name>Insight.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

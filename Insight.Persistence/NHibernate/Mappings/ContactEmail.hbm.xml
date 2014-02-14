@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="ContactEmail" table="ContactEmail">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="ContactID" />
+        <property name="Email" />
+        <property name="EmailTypeID" column="EmailType" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="DateCreated" />
+        <property name="LastUpdated" />
+        <property name="MarkedForDeletion" />
+    </class>
+
+</hibernate-mapping>

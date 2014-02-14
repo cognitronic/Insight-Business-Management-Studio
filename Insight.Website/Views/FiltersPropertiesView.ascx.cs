@@ -1,0 +1,215 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Telerik.Web.UI;
+using Insight.Presenters;
+using Insight.Presenters.ViewInterfaces;
+using IdeaSeed.Web.UI;
+using Insight.Web.Bases;
+using Insight.Core.Domain;
+using Insight.Core.Domain.Interfaces;
+using Insight.Web.Controls;
+using Insight.Core.Security;
+
+namespace Insight.Website.Views
+{
+    [ViewStateModeById]
+    [PresenterType(typeof(FiltersPropertiesPresenter))]
+    public partial class FiltersPropertiesView : BaseWebUserControl, IFiltersPropertiesView
+    {
+        bool createAgain = false;
+        IList<FilterOptionsCollectionView> OptionControls
+        {
+            get
+            {
+                if (SessionManager.Current["controls"] != null)
+                    return (IList<FilterOptionsCollectionView>)SessionManager.Current["controls"];
+                else
+                    SessionManager.Current["controls"] = new List<FilterOptionsCollectionView>();
+                return (IList<FilterOptionsCollectionView>)SessionManager.Current["controls"];
+            }
+            set
+            {
+                SessionManager.Current["controls"] = value;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            base.SelfRegister(this);
+            if (this.LoadView != null)
+            {
+                this.LoadView(this, EventArgs.Empty);
+            }
+            //Control control = GetPostBackControl(HttpContext.Current.Handler as System.Web.UI.Page);
+            //if ((control != null && control.ClientID ==
+            //                lbAddAndCondtion.ClientID) || createAgain)
+            //{
+            //    createAgain = true;
+            //    CreateUserControl(control.ID);
+            //}
+        }
+
+        protected override void OnInit(EventArgs e)
+        {
+            
+
+        }
+
+        protected override void OnUnload(EventArgs e)
+        {
+            base.OnUnload(e);
+            if (this.UnloadView != null)
+            {
+                this.UnloadView(this, EventArgs.Empty);
+            }
+        }
+
+        protected void AddAndConditionClicked(object o, EventArgs e)
+        {
+            var control = LoadControl("~/Views/FilterOptionsCollectionView.ascx");
+            OptionControls.Add((FilterOptionsCollectionView)control);
+            control.ID = "options" + OptionControls.Count.ToString();
+            phConditions.Controls.Add(control);
+        }
+
+        #region IBasePropertiesView<Contact> Members
+
+        public void LoadItem(IListFilter f)
+        {
+            
+        }
+
+        public void NavigateTo(string url)
+        {
+            HttpContext.Current.Response.Redirect(url);
+        }
+
+        public new event EventHandler LoadView;
+
+        public new event EventHandler UnloadView;
+
+        public event EventHandler OnViewPreRender;
+
+        public dynamic ConditionsContainer
+        {
+            get
+            {
+                return divConditionsContainer;
+            }
+            set
+            {
+                divConditionsContainer = value;
+            }
+        }
+
+        public string ViewTitle
+        {
+            get
+            {
+                return lblPropertiesTitle.Text;
+            }
+            set
+            {
+                lblPropertiesTitle.Text = value;
+            }
+        }
+        #endregion
+
+        #region IItem Members
+
+        public new int ID
+        {
+            get;
+            set;
+        }
+
+        public string Name
+        {
+            get
+            {
+                return tbViewTitle.Text;
+            }
+            set
+            {
+                tbViewTitle.Text = value; 
+            }
+        }
+
+        public string Description
+        {
+            get;
+            set;
+        }
+
+        public int PageID { get; set; }
+        public int UserID { get; set; }
+        public bool IsDefault { get; set; }
+        public string SearchPropertyControls { get; set; }
+        public string SearchCriterion { get; set; }
+        public bool MarkedForDeletion { get; set; }
+
+        #endregion
+
+        protected Control GetPostBackControl(System.Web.UI.Page page)
+        {
+            Control control = null;
+            try
+            {
+                string ctrlName = page.Request.Params.Get("__EVENTTARGET");
+
+                if (ctrlName != null && ctrlName != String.Empty)
+                {
+                    control = page.FindControl(ctrlName);
+                }
+                else
+                {
+                    ContentPlaceHolder cph =
+                      (ContentPlaceHolder)page.FindControl("cpMainContent");
+                    for (int i = 0, len = page.Request.Form.Count; i < len; i++)
+                    {
+                        string[] ctl = page.Request.Form.AllKeys[i].Split('$');
+                        if (ctl.Length > 2)
+                        {
+                            control = cph.FindControl(ctl[2])
+                                      as System.Web.UI.WebControls.Button;
+                        }
+
+                        if (control != null) break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return control;
+        }
+
+        protected void CreateUserControl(string controlID)
+        {
+            try
+            {
+                if (createAgain && phConditions != null)
+                {
+                    if (OptionControls.Count > 0)
+                    {
+                        phConditions.Controls.Clear();
+                        foreach (var c in OptionControls)
+                        {
+                            phConditions.Controls.Add(c);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
+    }
+}

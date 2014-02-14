@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04EF6833-FABA-4453-AF3D-3D8CC0F8CB52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insight.Web</RootNamespace>
+    <AssemblyName>Insight.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdeaSeed.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IdeaSeed.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\IdeaSeed.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Service, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.Reporting.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XamlRendering, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.Reporting.XamlRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2010.1.309.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bases\AccountsBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bases\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bases\BaseWebUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bases\InsightBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bases\SalesBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routing\AccountAddressRouteHandler.cs" />
+    <Compile Include="Routing\AccountContactAddressRouteHandler.cs" />
+    <Compile Include="Routing\AccountContactRouteHandler.cs" />
+    <Compile Include="Routing\AccountRouteHandler.cs" />
+    <Compile Include="Routing\ApplicationRoute.cs" />
+    <Compile Include="Routing\ContactEmailRouteHandler.cs" />
+    <Compile Include="Routing\ErrorRouteHandler.cs" />
+    <Compile Include="Routing\PageRouteHandler.cs" />
+    <Compile Include="Routing\ProjectRouteHandler.cs" />
+    <Compile Include="Routing\RouteBuilder.cs" />
+    <Compile Include="Routing\SalesRouteHandler.cs" />
+    <Compile Include="Routing\SupportRouteHandler.cs" />
+    <Compile Include="Routing\UtilityRouteHandler.cs" />
+    <Compile Include="Security\WebSecurityContext.cs" />
+    <Compile Include="Utils\AssemblyResourceProvider.cs" />
+    <Compile Include="Utils\AssemblyResourceVirtualFile.cs" />
+    <Compile Include="Utils\HttpPageHelper.cs" />
+    <Compile Include="Utils\WebSessionProvider.cs" />
+    <Compile Include="Utils\WebUtils.cs" />
+    <Compile Include="WebControls\AccountsDDL.cs" />
+    <Compile Include="WebControls\AccountTypesDDL.cs" />
+    <Compile Include="WebControls\EmailTypeDDL.cs" />
+    <Compile Include="WebControls\GridPageSizeDDL.cs" />
+    <Compile Include="WebControls\IndustryTypesDDL.cs" />
+    <Compile Include="WebControls\ServiceLevelAgreementsDDL.cs" />
+    <Compile Include="WebControls\UsersDDL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insight.Core\Insight.Core.csproj">
+      <Project>{B3AC4968-F755-4881-9CA8-C56C082B3B3C}</Project>
+      <Name>Insight.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Persistence\Insight.Persistence.csproj">
+      <Project>{FB9ABDEC-9D25-4ACD-8F60-C2486C40CA55}</Project>
+      <Name>Insight.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Presenters\Insight.Presenters.csproj">
+      <Project>{7C539CC6-5D31-4626-9385-49AC4D5D0FF2}</Project>
+      <Name>Insight.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Services\Insight.Services.csproj">
+      <Project>{C4CB33DA-FFAC-4FA1-A292-449A83D9EDD2}</Project>
+      <Name>Insight.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

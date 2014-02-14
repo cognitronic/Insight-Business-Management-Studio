@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C0D0138-F02C-4DE2-B5A5-9AD5096B153F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insight.Website</RootNamespace>
+    <AssemblyName>Insight.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdeaSeed.Core">
+      <HintPath>..\References\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IdeaSeed.Web">
+      <HintPath>..\References\IdeaSeed.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Insight.Accounts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Insight.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>..\References\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\References\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\References\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Insight.Website.dll" />
+    <Content Include="bin\Insight.Website.pdb" />
+    <Content Include="CSS\Grid.Insight.css" />
+    <Content Include="CSS\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="CSS\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="CSS\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="CSS\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CSS\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="CSS\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="CSS\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="CSS\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="CSS\images\ui-icons_222222_256x240.png" />
+    <Content Include="CSS\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="CSS\images\ui-icons_454545_256x240.png" />
+    <Content Include="CSS\images\ui-icons_888888_256x240.png" />
+    <Content Include="CSS\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="CSS\Main.css" />
+    <Content Include="CSS\modal.css" />
+    <Content Include="CSS\ui.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\add_48.png" />
+    <Content Include="Images\application_view_tile.png" />
+    <Content Include="Images\arrow_refresh.png" />
+    <Content Include="Images\arrow_undo.png" />
+    <Content Include="Images\attach.png" />
+    <Content Include="Images\bluebutton.png" />
+    <Content Include="Images\bluebuttonBig.png" />
+    <Content Include="Images\bodybg.png" />
+    <Content Include="Images\bodybgold.png" />
+    <Content Include="Images\book_open.png" />
+    <Content Include="Images\buttons.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\chart_pie.png" />
+    <Content Include="Images\cog.png" />
+    <Content Include="Images\computer.png" />
+    <Content Include="Images\Contacts\datapath_danielschreiber.jpg" />
+    <Content Include="Images\database_go.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\disk.png" />
+    <Content Include="Images\disk_multiple.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\exclamation.png" />
+    <Content Include="Images\footerbg.png" />
+    <Content Include="Images\Grid\AddRecord.gif" />
+    <Content Include="Images\Grid\Cancel.gif" />
+    <Content Include="Images\Grid\Delete.gif" />
+    <Content Include="Images\Grid\Edit.gif" />
+    <Content Include="Images\Grid\export.gif" />
+    <Content Include="Images\Grid\Filter.gif" />
+    <Content Include="Images\Grid\MoveDown.gif" />
+    <Content Include="Images\Grid\MoveUp.gif" />
+    <Content Include="Images\Grid\PagingFirst.gif" />
+    <Content Include="Images\Grid\PagingLast.gif" />
+    <Content Include="Images\Grid\PagingNext.gif" />
+    <Content Include="Images\Grid\PagingPrev.gif" />
+    <Content Include="Images\Grid\Refresh.gif" />
+    <Content Include="Images\Grid\SingleMinus.gif" />
+    <Content Include="Images\Grid\SinglePlus.gif" />
+    <Content Include="Images\Grid\sortAsc.gif" />
+    <Content Include="Images\Grid\sortDesc.gif" />
+    <Content Include="Images\Grid\sprite.gif" />
+    <Content Include="Images\Grid\Update.gif" />
+    <Content Include="Images\group.png" />
+    <Content Include="Images\group_add.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\layout.png" />
+    <Content Include="Images\layout_content.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\loading_small.gif" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\map.png" />
+    <Content Include="Images\modalbg.png" />
+    <Content Include="Images\note.png" />
+    <Content Include="Images\no_photo.jpg" />
+    <Content Include="Images\orangebutton.png" />
+    <Content Include="Images\orangebuttonBig.png" />
+    <Content Include="Images\package_green.png" />
+    <Content Include="Images\page_copy.png" />
+    <Content Include="Images\page_excel.png" />
+    <Content Include="Images\page_lightning.png" />
+    <Content Include="Images\page_white_acrobat.png" />
+    <Content Include="Images\page_white_star.png" />
+    <Content Include="Images\pencil.png" />
+    <Content Include="Images\printer.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\script.png" />
+    <Content Include="Images\search_48.png" />
+    <Content Include="Images\sideBarTitleBG.png" />
+    <Content Include="Images\table.png" />
+    <Content Include="Images\tag_blue.png" />
+    <Content Include="Images\text_list_bullets.png" />
+    <Content Include="Images\ui-bg_flat_0_3869b0_40x100.png" />
+    <Content Include="Images\user_add.png" />
+    <Content Include="Images\vcard.png" />
+    <Content Include="Images\x.png" />
+    <Content Include="Images\zoom.png" />
+    <Content Include="obj\Debug\Insight.Website.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Insight.Website.dll" />
+    <Content Include="obj\Debug\Insight.Website.pdb" />
+    <Content Include="Projects\Dashboardaspx.aspx" />
+    <Content Include="Sales\Dashboard.aspx" />
+    <Content Include="Scripts\blend\jquery.blend-min.js" />
+    <Content Include="Scripts\blend\jquery.blend.js" />
+    <Content Include="Scripts\effects.js" />
+    <Content Include="Scripts\jquery-1.3.2.js" />
+    <Content Include="Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.7.1.custom.min.js" />
+    <Content Include="Scripts\jquery.pack.js" />
+    <Content Include="Scripts\jquery.simplemodal-1.3.3.js" />
+    <Content Include="Scripts\pngfix.js" />
+    <Content Include="Scripts\ui.core.js" />
+    <Content Include="Scripts\ui.datepicker.js" />
+    <Content Include="Scripts\ui.dialog.js" />
+    <Content Include="Scripts\ui.resizable.js" />
+    <Content Include="Scripts\ui.sortable.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\ViewsBuilder.js" />
+    <Content Include="Support\Dashboard.aspx" />
+    <Content Include="UtilityPages\Error.aspx" />
+    <Content Include="UtilityPages\FilterViews.aspx" />
+    <Content Include="UtilityPages\Login.aspx" />
+    <Content Include="Views\AdminDashboardView.ascx" />
+    <Content Include="Views\DashboardToolBarView.ascx" />
+    <Content Include="Views\FilterOptionsCollectionView.ascx" />
+    <Content Include="Views\FiltersPropertiesView.ascx" />
+    <Content Include="Views\ListToolBarView.ascx" />
+    <Content Include="Views\LoginView.ascx" />
+    <Content Include="Views\MasterPageHeaderView.ascx" />
+    <Content Include="Views\PropertiesToolBarView.ascx" />
+    <Content Include="Views\QuickLinksView.ascx" />
+    <Content Include="Views\UserHistoryLinksView.ascx" />
+    <Content Include="Views\UserListView.ascx" />
+    <Content Include="Views\UserPropertiesView.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\Dashboardaspx.aspx.cs">
+      <DependentUpon>Dashboardaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\Dashboardaspx.aspx.designer.cs">
+      <DependentUpon>Dashboardaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sales\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityPages\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UtilityPages\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityPages\FilterViews.aspx.cs">
+      <DependentUpon>FilterViews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UtilityPages\FilterViews.aspx.designer.cs">
+      <DependentUpon>FilterViews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityPages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UtilityPages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminDashboardView.ascx.cs">
+      <DependentUpon>AdminDashboardView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminDashboardView.ascx.designer.cs">
+      <DependentUpon>AdminDashboardView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardToolBarView.ascx.cs">
+      <DependentUpon>DashboardToolBarView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardToolBarView.ascx.designer.cs">
+      <DependentUpon>DashboardToolBarView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FilterOptionsCollectionView.ascx.cs">
+      <DependentUpon>FilterOptionsCollectionView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FilterOptionsCollectionView.ascx.designer.cs">
+      <DependentUpon>FilterOptionsCollectionView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FiltersPropertiesView.ascx.cs">
+      <DependentUpon>FiltersPropertiesView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FiltersPropertiesView.ascx.designer.cs">
+      <DependentUpon>FiltersPropertiesView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListToolBarView.ascx.cs">
+      <DependentUpon>ListToolBarView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ListToolBarView.ascx.designer.cs">
+      <DependentUpon>ListToolBarView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginView.ascx.cs">
+      <DependentUpon>LoginView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.ascx.designer.cs">
+      <DependentUpon>LoginView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MasterPageHeaderView.ascx.cs">
+      <DependentUpon>MasterPageHeaderView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MasterPageHeaderView.ascx.designer.cs">
+      <DependentUpon>MasterPageHeaderView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PropertiesToolBarView.ascx.cs">
+      <DependentUpon>PropertiesToolBarView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PropertiesToolBarView.ascx.designer.cs">
+      <DependentUpon>PropertiesToolBarView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuickLinksView.ascx.cs">
+      <DependentUpon>QuickLinksView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QuickLinksView.ascx.designer.cs">
+      <DependentUpon>QuickLinksView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserHistoryLinksView.ascx.cs">
+      <DependentUpon>UserHistoryLinksView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserHistoryLinksView.ascx.designer.cs">
+      <DependentUpon>UserHistoryLinksView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserListView.ascx.cs">
+      <DependentUpon>UserListView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserListView.ascx.designer.cs">
+      <DependentUpon>UserListView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserPropertiesView.ascx.cs">
+      <DependentUpon>UserPropertiesView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserPropertiesView.ascx.designer.cs">
+      <DependentUpon>UserPropertiesView.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\Main.Master" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Scripts\blend\README" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insight.Core\Insight.Core.csproj">
+      <Project>{9A4A5983-AB0F-4413-AEF5-96245FE4B9AA}</Project>
+      <Name>Insight.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Presenters\Insight.Presenters.csproj">
+      <Project>{11DAEFD4-4940-4FED-8D9E-29F823E8EC08}</Project>
+      <Name>Insight.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Services\Insight.Services.csproj">
+      <Project>{CEECA07A-B099-4AAA-A72A-634793C801AE}</Project>
+      <Name>Insight.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insight.Web\Insight.Web.csproj">
+      <Project>{CFE34A8D-308E-4A03-BB9E-110AC2BAC4E0}</Project>
+      <Name>Insight.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53151</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

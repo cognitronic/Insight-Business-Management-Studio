@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories
+END
+PageApplicationViewRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/PageApplicationViewRepository.cs
+END
+PageRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/PageRepository.cs
+END
+ApplicationViewRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/ApplicationViewRepository.cs
+END
+UserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/UserRepository.cs
+END
+ListFilterRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/ListFilterRepository.cs
+END
+ModuleUserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/ModuleUserRepository.cs
+END
+ModuleRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/Repositories/ModuleRepository.cs
+END

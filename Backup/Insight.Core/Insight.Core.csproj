@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3AC4968-F755-4881-9CA8-C56C082B3B3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insight.Core</RootNamespace>
+    <AssemblyName>Insight.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdeaSeed.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IdeaSeed.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\IdeaSeed.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Account.cs" />
+    <Compile Include="Domain\AccountAddress.cs" />
+    <Compile Include="Domain\AddressType.cs" />
+    <Compile Include="Domain\ApplicationView.cs" />
+    <Compile Include="Domain\ApplicationViewLayout.cs" />
+    <Compile Include="Domain\Attachment.cs" />
+    <Compile Include="Domain\ClientContact.cs" />
+    <Compile Include="Domain\ContactAddress.cs" />
+    <Compile Include="Domain\ContactEmail.cs" />
+    <Compile Include="Domain\ContactType.cs" />
+    <Compile Include="Domain\ContentView.cs" />
+    <Compile Include="Domain\Contract.cs" />
+    <Compile Include="Domain\ContractType.cs" />
+    <Compile Include="Domain\EmailType.cs" />
+    <Compile Include="Domain\HistoryLink.cs" />
+    <Compile Include="Domain\IndustryType.cs" />
+    <Compile Include="Domain\Item.cs" />
+    <Compile Include="Domain\ItemType.cs" />
+    <Compile Include="Domain\IWebUserControl.cs" />
+    <Compile Include="Domain\Module.cs" />
+    <Compile Include="Domain\ModuleRole.cs" />
+    <Compile Include="Domain\ModuleUser.cs" />
+    <Compile Include="Domain\Page.cs" />
+    <Compile Include="Domain\PageApplicationView.cs" />
+    <Compile Include="Domain\PageNavigationType.cs" />
+    <Compile Include="Domain\PageType.cs" />
+    <Compile Include="Domain\PageUser.cs" />
+    <Compile Include="Domain\ResourceStrings.cs" />
+    <Compile Include="Domain\ServiceLevelAgreement.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserControl.cs" />
+    <Compile Include="Domain\UserPreferences.cs" />
+    <Compile Include="Interfaces\Data\IAccountRepository.cs" />
+    <Compile Include="Interfaces\Data\IApplicationViewRepository.cs" />
+    <Compile Include="Interfaces\Data\ICanSave.cs" />
+    <Compile Include="Interfaces\Data\IClientContactAddressRepository.cs" />
+    <Compile Include="Interfaces\Data\IClientContactEmailRepository.cs" />
+    <Compile Include="Interfaces\Data\IClientContactRepository.cs" />
+    <Compile Include="Interfaces\Data\IContentViewRepository.cs" />
+    <Compile Include="Interfaces\Data\IEquipmentRepository.cs" />
+    <Compile Include="Interfaces\Data\IModuleRepository.cs" />
+    <Compile Include="Interfaces\Data\IModuleRoleRepository.cs" />
+    <Compile Include="Interfaces\Data\IModuleUserRepository.cs" />
+    <Compile Include="Interfaces\Data\IPageRepository.cs" />
+    <Compile Include="Interfaces\Data\IPageApplicationViewRepository.cs" />
+    <Compile Include="Interfaces\Data\IUserControlRepository.cs" />
+    <Compile Include="Interfaces\Data\IUserRepository.cs" />
+    <Compile Include="Interfaces\IAccount.cs" />
+    <Compile Include="Interfaces\IAccountAddress.cs" />
+    <Compile Include="Interfaces\IApplicationView.cs" />
+    <Compile Include="Interfaces\IAttachment.cs" />
+    <Compile Include="Interfaces\IAuditable.cs" />
+    <Compile Include="Interfaces\IClientContact.cs" />
+    <Compile Include="Interfaces\IContact.cs" />
+    <Compile Include="Interfaces\IContactAddress.cs" />
+    <Compile Include="Interfaces\IContactEmail.cs" />
+    <Compile Include="Interfaces\IContentView.cs" />
+    <Compile Include="Interfaces\IContract.cs" />
+    <Compile Include="Interfaces\IEquipment.cs" />
+    <Compile Include="Interfaces\IHasAddress.cs" />
+    <Compile Include="Interfaces\IIndustryType.cs" />
+    <Compile Include="Interfaces\IItem.cs" />
+    <Compile Include="Interfaces\IModule.cs" />
+    <Compile Include="Interfaces\IModuleRole.cs" />
+    <Compile Include="Interfaces\IModuleUser.cs" />
+    <Compile Include="Interfaces\IPage.cs" />
+    <Compile Include="Interfaces\IPageApplicationView.cs" />
+    <Compile Include="Interfaces\IPageUser.cs" />
+    <Compile Include="Interfaces\IServiceLevelAgreement.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
+    <Compile Include="Interfaces\IUserControl.cs" />
+    <Compile Include="Interfaces\IQuicklink.cs" />
+    <Compile Include="Interfaces\Services\IPageViewServices.cs" />
+    <Compile Include="Interfaces\Services\ISecurityServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AccessLevels.cs" />
+    <Compile Include="Security\ApplicationContext.cs" />
+    <Compile Include="Security\AuthenticationResponse.cs" />
+    <Compile Include="Security\ISecurityContext.cs" />
+    <Compile Include="Security\ISessionProvider.cs" />
+    <Compile Include="Security\SecurityContextManager.cs" />
+    <Compile Include="Security\SessionManager.cs" />
+    <Compile Include="Utils\JSONSerializationHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

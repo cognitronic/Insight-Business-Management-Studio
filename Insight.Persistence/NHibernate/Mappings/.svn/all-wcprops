@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings
+END
+PageApplicationView.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/PageApplicationView.hbm.xml
+END
+PageUser.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/PageUser.hbm.xml
+END
+Page.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/Page.hbm.xml
+END
+ApplicationView.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/ApplicationView.hbm.xml
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/User.hbm.xml
+END
+ListFilter.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/ListFilter.hbm.xml
+END
+ModuleUser.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/ModuleUser.hbm.xml
+END
+Module.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/Module.hbm.xml
+END
+ModuleRole.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Persistence/NHibernate/Mappings/ModuleRole.hbm.xml
+END

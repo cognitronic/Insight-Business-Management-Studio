@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Reporting.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Reporting.Service.ExtensionInfo">
+            <summary>
+            Represents a <see cref="T:Telerik.Reporting.IExtension"/> on the server
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ExtensionInfo.Name">
+            <summary>
+            The name of the extension.
+            </summary>
+            <seealso cref="T:Telerik.Reporting.Interfaces.Attributes.ExtensionNameAttribute"/>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ExtensionInfo.LocalizedName">
+            <summary>
+            The localized name of the extension.
+            </summary>
+            <seealso cref="T:Telerik.Reporting.Interfaces.Attributes.ExtensionLocalizedDescriptionAttribute"/>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ReportInfo">
+            <summary>
+            Represents a <see cref="T:Telerik.Reporting.Report"/> on the server 
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ReportInfo.Name">
+            <summary>
+            The <see cref="!:System.Type.Name"/> of the Report class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ReportInfo.FullName">
+            <summary>
+            The <see cref="P:System.Type.AssemblyQualifiedName"/> of the Report class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ReportInfo.Description">
+            <summary>
+            The description of the Report, if any.
+            </summary>
+            <remarks>
+            The description of the Report is attached through the <see cref="T:System.ComponentModel.DescriptionAttribute"/>.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ServiceOperationResultBase">
+            <summary>
+            Represents the result of a service operation
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ServiceOperationResultBase.ThrowOnError">
+            <summary>
+            Throws an <see cref="T:Telerik.Reporting.Service.ReportServiceOperationException"/> if the current operation has ended with an error.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ServiceOperationResultBase.RaiseExceptionIfNecessary">
+            <summary>
+            Throws an <see cref="T:Telerik.Reporting.Service.ReportServiceOperationException"/> if the current operation has ended with an error.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ServiceOperationResultBase.Error">
+            <summary>
+            Gets or sets the current error message for the current service operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ServiceOperationResultBase.HasError">
+            <summary>
+            Indicates whether the current operation has ended with error.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ReportServiceOperationException">
+            <summary>
+            Represents an error occurred during a Report Service operation.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceOperationException.#ctor">
+            <summary>
+            Creates an instance of the <see cref="T:Telerik.Reporting.Service.ReportServiceOperationException"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceOperationException.#ctor(System.String)">
+            <summary>
+            Creates an instance of the <see cref="T:Telerik.Reporting.Service.ReportServiceOperationException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="T:Telerik.Reporting.Service.RenderingSessionInfo">
+            <summary>
+            Represents the result of a RenderAndCache service operation. This class is intended for internal use only.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.InstanceID">
+            <summary>
+            Gets or sets the unique identifier of the current rendering session.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.PageCount">
+            <summary>
+            Gets or sets the count of the generated pages for the current rendering session.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.Bookmarks">
+            <summary>
+            Gets or sets a list of the <see cref="!:BookmarkInfo"/>s for the current rendering session.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.Actions">
+            <summary>
+            Gets or sets a list of the <see cref="T:Telerik.Reporting.Service.ActionInfo"/>s for the current rendering session.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.HasDocumentMap">
+            <summary>
+            Gets or sets a value indicating whether a document map is available for the current report.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingSessionInfo.Parameters">
+            <summary>
+            Gets or sets a list of <see cref="T:Telerik.Reporting.Service.Parameter"/>s for the current report.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.RenderingResult">
+            <summary>
+            Represents the result of the Render service operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingResult.DocumentBytes">
+            <summary>
+            Byte array that contains the rendered report.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingResult.DocumentName">
+            <summary>
+            Gets or sets the name of the created document.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingResult.Extension">
+            <summary>
+            Gets or sets the file extension of the document.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.RenderingResult.MimeType">
+            <summary>
+            Gets or sets the MIME type of the document.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.PageInfo">
+            <summary>
+            Represents the result of the GetPage service operation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.PageInfo.PageNumber">
+            <summary>
+            Gets or sets the serial number of the current report page.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.PageInfo.Buffer">
+            <summary>
+            Gets or sets the Byte array that contains the current report page.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.NameValueDictionary">
+            <summary>
+            Represents a <see cref="T:System.Collections.Generic.Dictionary`2"/> with <see cref="T:System.String"/> key and <see cref="T:System.Object"/> value.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.Parameter">
+            <summary>
+            Represents a <see cref="T:Telerik.Reporting.ReportParameter"/> ready to be displayed by a report viewer. <see cref="T:Telerik.Reporting.Service.Parameter"/> is intended for internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.BookmarkNode">
+            <summary>
+            Represents a bookmark in the document hierarchy.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.Children">
+            <summary>
+            The list of all child <see cref="T:Telerik.Reporting.Service.BookmarkNode"/>s.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.Id">
+            <summary>
+            The identifier of the <see cref="!:BookmarkInfo"/> this <see cref="T:Telerik.Reporting.Service.BookmarkNode"/> points to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.Text">
+            <summary>
+            The label of the current <see cref="T:Telerik.Reporting.Service.BookmarkNode"/> when displayed in the report viewer's Document Map.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.Page">
+            <summary>
+            The number of the page where the current bookmark appears.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.X">
+            <summary>
+            The X-coordinate of the location in the page of the current bookmark.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.BookmarkNode.Y">
+            <summary>
+            The Y-coordinate of the location in the page of the current bookmark.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ActionInfo">
+            <summary>
+            Represents an interactive action and its coordinates defined in the document hierarchy.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.Page">
+            <summary>
+            The number of the page where the action is defined.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.ZOrder">
+            <summary>
+            The z-order of the action.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.X">
+            <summary>
+            The X coordinate from the position on the page of the action area (in pixels).
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.Y">
+            <summary>
+            The Y coordinate from the position on the page of the action area (in pixels).
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.Width">
+            <summary>
+            The Width of the action area on the page (in pixels).
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.Height">
+            <summary>
+            The Height of the action area on the page (in pixels).
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ActionInfo.Action">
+            <summary>
+            The action that will be executed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ActionType">
+            <summary>
+            Specifies the type of an interactive action. 
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Service.ActionType.ReportNavigation">
+            <summary>
+            The action navigates to an report.
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Service.ActionType.BookmarkNavigation">
+            <summary>
+            The action navigates to a bookmark.
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Service.ActionType.UrlNavigation">
+            <summary>
+            The action navigates to an URL.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.Action">
+            <summary>
+            Represents an interactive action.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.Action.Type">
+            <summary>
+            The type of the action
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.Action.TargetBookmarkId">
+            <summary>
+            The target bookmark of the action.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.Action.ReportDocumentType">
+            <summary>
+            The assembly qualified name of the target report type.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.Action.Parameters">
+            <summary>
+            The report parameters values that are passed to the target report when the
+            action is triggered.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Service.Action.Url">
+            <summary>
+            the target URL of the action.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Service.IClientAccessPolicy">
+            <summary>
+            Enables the access to the security policy required by Silverlight
+            </summary>
+            <remarks>
+            <para>
+            If the connection request was from a WebClient or an HTTP class to a cross-domain site, 
+            the Silverlight runtime tries to download the security policy file using the HTTP protocol. 
+            The Silverlight runtime first tries to download a Silverlight policy file with a name of 
+            "clientaccesspolicy.xml" at the root of the requested target domain using the HTTP protocol.
+            </para>
+            <para>
+            The default implementation of the <b>IClientAccessPolicy</b> interface returns a general policy
+            that policy accepts connections from any domain and allows request headers and specifies resources that can be 
+            accessed and includes subpaths of these resources:
+            <code title="clientaccesspolicy.xml" source="Net20\Telerik.Reporting.Service\clientaccesspolicy.xml"/>
+            </para>
+            <para>
+            The <b>IClientAccessPolicy</b> service contract requres to be exposed through an endpoint 
+            configured to use a <see cref="T:System.ServiceModel.WebHttpBinding"/>.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IClientAccessPolicy.GetClientAccessPolicy">
+            <summary>
+            Returns security policy file required by Silverlight when accessing a cross-domain service.
+            </summary>
+            <returns>A <see cref="T:System.IO.Stream"/> that contains the <b>clientaccesspolicy.xml</b></returns>
+            <remarks>
+            <para>
+            If the connection request was from a WebClient or an HTTP class to a cross-domain site, 
+            the Silverlight runtime tries to download the security policy file using the HTTP protocol. 
+            The Silverlight runtime first tries to download a Silverlight policy file with a name of 
+            "clientaccesspolicy.xml" at the root of the requested target domain using the HTTP protocol.
+            </para>
+            <para>
+            The default implementation of the <b>IClientAccessPolicy</b> interface returns a general policy
+            that policy accepts connections from any domain and allows request headers and specifies resources that can be 
+            accessed and includes subpaths of these resources:
+            <code title="clientaccesspolicy.xml" source="Net20\Telerik.Reporting.Service\clientaccesspolicy.xml"/>
+            </para>
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Service.IReportService">
+            <summary>
+            Represents the Telerik Reporting service.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.ListAvailableReports">
+            <summary>
+            Retrieves the list of the available for the service reports.
+            </summary>
+            <returns>List of the available reports.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.ListRenderingExtensions">
+            <summary>
+            Retrieves the list of the available rendering extensions.
+            </summary>
+            <returns>List of the available rendering extensions.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.Render(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Renders a report and returns the generated document.
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">A <see cref="T:Telerik.Reporting.Service.NameValueDictionary"/> with setting for the current render format.</param>
+            <param name="parameters">A <see cref="T:Telerik.Reporting.Service.NameValueDictionary"/> with values for the report parameters.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.RenderingResult"/> that contains the generated document bytes and info.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.RenderAndCache(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Renders a report and stores the result in the current session. This operation is intended for internal use only.
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">A <see cref="T:Telerik.Reporting.Service.NameValueDictionary"/> with setting for the current render format.</param>
+            <param name="parameters">A <see cref="T:Telerik.Reporting.Service.NameValueDictionary"/> with values for the report parameters.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.RenderingSessionInfo"/> that contains the result of the rendering operation.</returns>
+            <remarks>Requires ASP.NET session.</remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.GetPage(System.String,System.Int32)">
+            <summary>
+            Retrieves a rendered page for the given rendering session ID and page number. This operation is intended for internal use only.
+            </summary>
+            <param name="instanceID">The unique identifier of the rendering session as returned by a previous call to a RenderAndCache operation.</param>
+            <param name="pageNumber">The serial number of the page to retrieve.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.PageInfo"/> that contains the page data.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IReportService.GetReportParameters(System.String,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Retrieve a list of the report parameters for the given report and values. This operation is intended for internal use only.
+            </summary>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type for which to obtain the parameters.</param>
+            <param name="parameters">A dictionary with values for the report parameters.</param>
+            <returns>A list of report parameters.</returns>
+        </member>
+        <member name="T:Telerik.Reporting.Service.IResourceService">
+            <summary>
+            Represents the Telerik Reporting resource service.
+            </summary>
+            <remarks>
+            The <see cref="T:Telerik.Reporting.Service.IResourceService"/> is intended for internal use only.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IResourceService.GetRenderStream(System.String,System.String)">
+            <summary>
+            Retrieves a render stream created during a report rendering session.
+            </summary>
+            <param name="instanceID">The unique identifier of the rendering session that the resource belongs to.</param>
+            <param name="name">The name of the resource.</param>
+            <remarks>
+            Requires HTTP GET request.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.IResourceService.Export(System.String,System.String,System.String,System.String)">
+            <summary>
+            Retrieves a report document.
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">JSON-formatted dictionaty (key/value pairs) with DeviceInfo settings for the current render format.</param>
+            <param name="parameterValues">JSON-formatter (key/value pairs) with the parameter values for the current report.</param>
+            <remarks>
+            Requeres HTTP GET request.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ReportService">
+            <summary>
+            The top-level class of the Telerik Reporting Web service.
+            </summary>
+            <remarks>
+            Use this class when hosting the Telerik Report Service in IIS. Requires ASP.NET.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Service.ReportServiceBase">
+            <summary>
+            The base class of the Telerik Reporting WCF Service.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.GetState(System.String)">
+            <summary>
+            Gets a value from the internal storage.
+            </summary>
+            <param name="name">The key name of the state value.</param>
+            <returns>The state value with the specified name.</returns>
+            <remarks>The internal storage represents a central place for storing shared data between the service calls.</remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.SetState(System.String,System.Object)">
+            <summary>
+            Adds a value to the internal storage.
+            </summary>
+            <param name="name">The key name of the state value.</param>
+            <param name="value">The state value with the specified name.</param>
+            <remarks>The internal storage represents a central place for storing shared data between the service calls.</remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IReportService#ListAvailableReports">
+            <summary>
+            Retrieves the list of the available for the service reports.
+            </summary>
+            <returns>List of the available reports.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IReportService#ListRenderingExtensions">
+            <summary>
+            Retrieves the list of available rendering extensions. This operation is intended for internal use only.
+            </summary>
+            <returns>List of available rendering extensions.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Render(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Renders a report and returns the generated document.
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">A dictionary with setting for the current render format.</param>
+            <param name="parameterValues">A dictionary with values for the report parameters.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.RenderingResult"/> that contains the generated document bytes and info.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IReportService#RenderAndCache(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Renders a report and stores the result in the current session. This operation is intended for internal use only.
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">A dictionary with setting for the current render format.</param>
+            <param name="parameterValues">A dictionary with values for the report parameters.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.RenderingSessionInfo"/> that contains the result of the rendering operation.</returns>
+            <remarks>Requires ASP.NET session.</remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IReportService#GetPage(System.String,System.Int32)">
+            <summary>
+            Retrieves a rendered page for the given rendering session ID and page number. This operation is intended for internal use only.
+            </summary>
+            <param name="instanceID">The unique identifier of the rendering session as returned by a previous call to RenderAndCache operation.</param>
+            <param name="pageNumber">The serial number of the page to retrieve.</param>
+            <returns>A <see cref="T:Telerik.Reporting.Service.PageInfo"/> that contains the page data.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IReportService#GetReportParameters(System.String,Telerik.Reporting.Service.NameValueDictionary)">
+            <summary>
+            Retrieves a list of report parameters for the given report and values. This operation is intended for internal use only.
+            </summary>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type for which to obtain the parameters.</param>
+            <param name="parameterValues">A dictionary with values for the report parameters.</param>
+            <returns>A list of report parameters.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Telerik.Reporting.Service.ReportServiceBase.CreateResourceUriTemplate(System.String)" -->
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IResourceService#GetRenderStream(System.String,System.String)">
+            <summary>
+            Retrieves a render stream created during a report rendering session.
+            </summary>
+            <param name="instanceID">The unique identifier of the rendering session that resource belongs to.</param>
+            <param name="name">The name of the resource.</param>
+            <remarks>
+            Requires HTTP GET request.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IResourceService#Export(System.String,System.String,System.String,System.String)">
+            <summary>
+            Retrieves a report document. 
+            </summary>
+            <param name="format">The render format.</param>
+            <param name="report">The <see cref="P:System.Type.AssemblyQualifiedName"/> of the report type to render.</param>
+            <param name="deviceInfo">JSON-formatted dictionary (key/value pairs) with DeviceInfo settings for the current render format.</param>
+            <param name="parameterValues">JSON-formatter (key/value pairs) with the parameter values for the current report.</param>
+            <remarks>
+            Requires HTTP GET request.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportServiceBase.Telerik#Reporting#Service#IClientAccessPolicy#GetClientAccessPolicy">
+            <summary>
+            Returns security policy file required by Silverlight when accessing a cross-domain service.
+            </summary>
+            <returns>A <see cref="T:System.IO.Stream"/> that contains the <b>clientaccesspolicy.xml</b></returns>
+            <remarks>
+            <para>
+            If the connection request was from a WebClient or an HTTP class to a cross-domain site, 
+            the Silverlight runtime tries to download the security policy file using the HTTP protocol. 
+            The Silverlight runtime first tries to download a Silverlight policy file with a name of 
+            "clientaccesspolicy.xml" at the root of the requested target domain using the HTTP protocol.
+            </para>
+            <para>
+            Overrider this method in order to change the default access policy for <see cref="T:Telerik.Reporting.Service.ReportServiceBase"/>.
+            </para>
+            <para>
+            The default implementation of the <b>IClientAccessPolicy</b> interface returns a general policy
+            that policy accepts connections from any domain and allows request headers and specifies resources that can be 
+            accessed and includes subpaths of these resources:
+            <code title="clientaccesspolicy.xml" source="Net20\Telerik.Reporting.Service\clientaccesspolicy.xml"/>
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Service.ReportServiceBase.BaseAddress">
+            <summary>
+            When implemented, returns the base address of the Telerik ReportService
+            that will be used as a base Uri for the resources
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportService.GetState(System.String)">
+            <summary>
+            Gets a value from the internal storage.
+            </summary>
+            <param name="name">The key name of the state value.</param>
+            <returns>The state value with the specified name.</returns>
+        </member>
+        <member name="M:Telerik.Reporting.Service.ReportService.SetState(System.String,System.Object)">
+            <summary>
+            Adds a value to the internal storage.
+            </summary>
+            <param name="name">The key name of the state value.</param>
+            <param name="value">The state value with the specified name.</param>
+        </member>
+    </members>
+</doc>

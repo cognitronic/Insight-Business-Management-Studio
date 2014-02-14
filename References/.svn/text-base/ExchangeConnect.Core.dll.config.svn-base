@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <appSettings>
+        <add key="EWSPATH" value="https://mail.mydatapath.com/ews/exchange.asmx"/>
+        <add key="EWSUSER" value="support2"/>
+        <add key="EWSPWD" value="blu3m00n$"/>
+        <add key="EWSDOMAIN" value="datapath"/>
+        <add key="EWSAUTODISCOVERURL" value="support2@mydatapath.com"/>
+    </appSettings>
+</configuration>

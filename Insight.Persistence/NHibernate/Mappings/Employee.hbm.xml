@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Employee" table="Employee">
+        <id name="ID" column="employeeid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="FirstName" />
+        <property name="MiddleName" />
+        <property name="LastName" />
+        <property name="Address" />
+        <property name="City" />
+        <property name="State" />
+        <property name="Zip" />
+        <property name="EmployeeTypeID" />
+        <property name="HomePhone" />
+        <property name="WorkPhone" />
+        <property name="CellPhone" />
+        <property name="Email" />
+        <property name="SSN" />
+        <property name="BirthDate" />
+        <property name="IsActive" />
+        <property name="EmergencyContactName" />
+        <property name="EmergencyContactPhone" />
+        <property name="EmergencyContactRelation" />
+        <property name="IMUsername" />
+        <property name="SMS" />
+        <property name="StartDate" />
+        <property name="TerminationDate" />
+        <property name="PayTypeID" />
+        <property name="HourlyBillRate" />
+        <property name="DepartmentID" />
+        <property name="LocationID" />
+        <one-to-one name="UserAccount" class="Insight.Core.Domain.User, Insight.Core"/>
+    </class>
+
+</hibernate-mapping>

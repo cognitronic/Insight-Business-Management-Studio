@@ -1,0 +1,605 @@
+﻿* 
+{
+	margin: 0;
+	padding: 0;
+}
+body 
+{
+	font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #000000;
+	background: #ffffff url(/Images/bodybg.png)  repeat-x top left;
+}
+
+img 
+{
+	border: none;
+}
+
+hr
+{
+    color: #d7e2f3;
+}
+
+h2
+{
+    color:#fb8409;
+}
+
+a
+{
+	color:#1e3287;
+    text-decoration:none;
+}
+
+a:hover
+{
+	color:#7393c2;
+    text-decoration:none;
+}
+
+/* START COLORS */
+.lightBlue
+{
+    color:#7393c2;
+}
+
+.insightBlue
+{
+    color:#1e3287;
+}
+
+.orange
+{
+    color:#fb8409;
+}
+
+.grey
+{
+    color:#777777;
+}
+
+/* END COLORS */
+
+#headerwrapper
+{
+    background: transparent;
+	min-width: 950px;	
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#ctl00_mpHeaderView_logo
+{
+    margin-top: 0px;
+    background: transparent url(/Images/logo.png)  no-repeat;
+    width: 264px;
+    height:83px;
+    float: left;
+    margin-left: 10px;
+}
+
+#ctl00_mpHeaderView_loggedinuser
+{
+    font: 12px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #ffffff;
+}
+
+#ctl00_mpHeaderView_loggedinuser span
+{
+    font: 12px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #f3f7fc !important;
+}
+
+#ctl00_divSideBar
+{
+    width: 200px !important;
+}
+
+#headernav
+{
+    margin-top: 10px;
+    padding-right: 25px;
+    float: right;
+}
+
+#ctl00_mpHeaderView_primarynav
+{
+    float: left;
+    margin-top: -17px;
+    margin-left: 25px;
+	min-width: 950px;	
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+}
+
+#ctl00_mpHeaderView_primarynav ul
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+ #ctl00_mpHeaderView_primarynav li
+ {
+    margin-right: 5px;
+    display: inline;
+    background-color: #7393c2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #ffffff;
+ }
+ 
+ #ctl00_mpHeaderView_primarynav a
+ {
+    text-decoration: none;
+    color: #ffffff;
+ }
+ 
+ #ctl00_mpHeaderView_primarynav a:hover
+ {
+    color: #222222;
+    text-decoration: none;
+ }
+ 
+ #ctl00_mpHeaderView_primarynav li#current a
+ {
+    color: #222222;
+    text-decoration: none;
+ }
+ 
+ #ctl00_mpHeaderView_primarynav li:hover
+ {
+    margin-right: 5px;
+    display: inline;
+    background-color: #e5edfa;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #222222;
+ }
+ 
+ #ctl00_mpHeaderView_primarynav li#current
+ {
+    margin-right: 5px;
+    display: inline;
+    background-color: #e5edfa;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #222222 !important;
+    border-top: solid 1px #333333;
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+    border-bottom: solid 1px #e5edfa;
+ }
+ 
+ #ctl00_mpHeaderView_subnav
+{
+    float: left;
+    margin-top: 7px;
+    margin-left: 25px;
+	min-width: 950px;
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    margin-bottom: 15px;
+}
+
+#ctl00_mpHeaderView_subnav ul
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+ #ctl00_mpHeaderView_subnav li
+ {
+    margin-right: 5px;
+    display: inline;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #222222;
+ }
+
+#ctl00_mpHeaderView_loggedinuser span
+{
+    color: #225294;
+}
+
+#headernav a
+{
+    font: 12px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #ffffff;
+}
+
+#headernav a:hover
+{
+    font: 12px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    color: #abc8e5;
+    text-decoration: none;
+}
+
+#ctl00_mpHeaderView_headersearch input
+{
+    border: solid 2px #e5edfa !important;
+    margin-top: 10px;
+    font: 13px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    font-weight: bold !important;
+}
+
+#page-wrap 
+{
+	background: transparent !important;
+	min-width: 950px;	
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	min-height: 400px;
+
+}
+
+#page-wrap #inside 
+{
+}
+	
+#main-content 
+{
+	padding-top: 5px;
+	padding-bottom: 20px;
+	vertical-align: top;
+	padding-left: 5px;
+}
+	
+#contentheader 
+{
+	background: transparent;
+	margin-bottom: 1px;
+	padding-left: 5px;
+}
+
+#maincontenttitle 
+{
+	background: transparent;
+}
+	
+#ctl00_divSideBar
+{
+	width: 200px !important;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	margin-right: 5px;
+}
+
+#footer 
+{
+	background: #ffffff url(/Images/footerbg.png)  repeat-x;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #000000;
+	height: 350px;
+    bottom: 0px !important;
+    width: 100%;
+    position: relative;
+}
+
+.clear
+{
+    clear:both;
+    width:100%;
+    line-height:0px;
+    height:0px;
+    display:block;
+}
+
+/* Buttons */
+#headersearch
+{
+    height: 35px;
+    width: 300px;
+}
+
+#searchbutton
+{
+    background: transparent url(/Images/bluebutton.png) no-repeat !important;
+    height: 30px !important;
+    width: 61px !important;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+#searchbutton:hover 
+{
+    background: transparent url(/Images/orangebutton.png)  no-repeat !important;
+    height: 30px !important;
+    width: 61px !important;
+}
+
+#searchbutton a
+{
+    color: #ffffff !important;
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+#searchbutton a:hover
+{
+    color: #ffffff !important;
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#newitembutton
+{
+    background: transparent url(/Images/orangebuttonBig.png) no-repeat !important;
+    height: 30px !important;
+    width: 100px !important;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#newitembutton:hover 
+{
+    background: transparent url(/Images/bluebuttonBig.png)  no-repeat !important;
+    height: 30px !important;
+    width: 100px !important;
+}
+
+#newitembutton a
+{
+    color: #ffffff !important;
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+#newitembutton a:hover
+{
+    color: #ffffff !important;
+    font: 16px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*-------------------- */
+
+
+#primaryNav
+{
+    width: 950px;
+    clear: both;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 0px 0px 0px 50px;
+    display:inline;
+}
+
+#primaryNav a
+{
+    color: #ffffff;
+    font: 24px Arial; 
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+#primaryNav a:hover
+{
+    color: #a1ca1f;
+}
+
+
+
+/*******************************************************************************
+  PORTLETS 
+*******************************************************************************/
+#portlets 
+{ 
+    padding:0px 0px; 
+}
+.columnmainbody 
+{ 
+    min-width: 950px;
+    max-width: 100%;
+    float: left; 
+    padding-bottom: 0px; 
+}
+.columnmainbody#left 
+{ 
+    margin-right:17px; 
+}
+
+.column 
+{ 
+    width: 200px !important; 
+    float: left; 
+    padding-bottom: 0px; 
+}
+.column#left 
+{ 
+    margin-right:17px; 
+}
+.portlet 
+{ 
+    margin: 0 0em 1em 0; 
+}
+.portlet-header 
+{ 
+    margin: 0em; 
+    padding-bottom: 5px; 
+    padding-left: 6px; 
+    padding-top:4px; 
+    padding-right:6px; 
+    font-size:12px; 
+    border: none !important; 
+    color: #333 !important; 
+    font-family:"Trebuchet MS", "Tahoma", "Verdana", sans-serif; 
+}
+.portlet-header .ui-icon 
+{ 
+    float: right; 
+    cursor:pointer; 
+}
+.portlet-header img 
+{
+    float:left; 
+    margin-right:5px; 
+}
+#portlets .fixed 
+{ 
+    cursor:auto; 
+} 
+.portlet-content 
+{ 
+    padding: 0.8em; 
+    font-size:12px !important; 
+    color: #333; 
+    border-top:1px solid #999 !important; 
+    font-family:"Trebuchet MS", "Tahoma", "Verdana", sans-serif; 
+}
+.ui-sortable-placeholder 
+{ 
+    border: 1px dashed #999 !important; 
+    visibility: visible !important; 
+    height: 100px !important; 
+    background: #EBEBEB;
+}
+.ui-sortable-placeholder * 
+{ 
+    visibility: hidden; 
+}
+
+.labellink
+{
+    font: 10px "Trebuchet MS", "Tahoma", "Verdana", sans-serif !important;
+}
+
+.propertypagecontent
+{
+    padding-bottom: 10px;
+    font-size:12px !important; 
+    width: 100% !important;
+}
+
+.propertypagecells
+{
+    padding-right: 25px;
+}
+
+.propertypagecontent a
+{
+	color:#fb8409;
+    text-decoration:none;
+}
+
+.propertypagecontent a:hover
+{
+	color:#7393c2;
+    text-decoration:none;
+}
+
+.propertypagesidebartitle span
+{
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+
+.propertypagesidebartitle a
+{
+	color:#1e3287;
+    text-decoration:none;
+}
+
+.propertypagesidebartitle a:hover
+{
+	color:#7393c2;
+    text-decoration:none;
+}
+
+
+
+/*------------ Modal ----------------------------*/
+#taskNoteModal {display:none;}
+#errorModal {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#ffffff; cursor:wait;}
+
+/* Container */
+#simplemodal-container {height:320px; width:600px; color:#ffffff; background-color:#0A5999; border:4px solid #0067B8; padding:12px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container #taskNoteModal {padding:8px;}
+.taskNote{cursor: pointer;}
+
+
+/* Login Styles */
+
+#logincontainer
+{
+    width: 575px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background: transparent url(/images/loginBG.png) no-repeat; 
+    padding: 15px;
+    
+}
+
+#logincontainer
+{
+    width: 575px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 150px;
+    padding: 15px;
+    
+}
+
+#logincontent
+{
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 150px;
+    font: 12px "Lucinda Console", "Tahoma", "Verdana", sans-serif;
+    font-weight: bold;
+	/*color: #24618E; */
+	color: #000000 !important;
+	padding: 15px 5px 15px 5px;
+}
+
+#logincontent input
+{
+    height: 25px;
+    width: 330px !important;
+    color: #999999;
+    font: 18px "Trebuchet MS", "Tahoma", "Verdana", sans-serif;
+}
+
+#logincontainer span
+{
+    padding: 0 5px 0 0;
+    
+}
+
+/* End Login Styles*/
+
+/*start table styles*/
+
+.detailTable td
+{
+    padding: 0px 5px 2px 5px;
+    vertical-align: top;
+}
+/*end table styles*/

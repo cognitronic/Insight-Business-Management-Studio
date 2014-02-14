@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="TaskAttachment" table="TaskAttachments">
+        <id name="ID" column="taskattachmentid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="TaskID" />
+        <property name="Description" />
+        <property name="EnteredByID" column="enteredby" />
+        <property name="ChangedByID" column="changedby" />
+        <property name="Title" />
+        <property name="DateAttached" />
+        <property name="Attachment" />
+        <property name="FileName" />
+        <property name="FullPath" />
+        <property name="Type" />
+    </class>
+
+</hibernate-mapping>

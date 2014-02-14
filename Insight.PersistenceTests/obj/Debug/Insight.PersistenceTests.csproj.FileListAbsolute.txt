@@ -1,0 +1,11 @@
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.PersistenceTests.dll
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.PersistenceTests.pdb
+D:\Projects\Insight\Insight.PersistenceTests\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Insight\Insight.PersistenceTests\obj\Debug\Insight.PersistenceTests.dll
+D:\Projects\Insight\Insight.PersistenceTests\obj\Debug\Insight.PersistenceTests.pdb
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Core.dll
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Persistence.dll
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Services.dll
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Services.pdb
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Persistence.pdb
+D:\Projects\Insight\Insight.PersistenceTests\bin\Debug\Insight.Core.pdb

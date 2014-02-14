@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data
+END
+IModuleUserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IModuleUserRepository.cs
+END
+IModuleRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IModuleRepository.cs
+END
+IModuleRoleRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IModuleRoleRepository.cs
+END
+IPageApplicationViewRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IPageApplicationViewRepository.cs
+END
+IPageRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IPageRepository.cs
+END
+IApplicationViewRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IApplicationViewRepository.cs
+END
+IUserRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IUserRepository.cs
+END
+IListFilterRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/Data/IListFilterRepository.cs
+END

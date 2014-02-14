@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="ClientContact" table="ClientContact">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="AccountID" />
+        <property name="FirstName" />
+        <property name="LastName"  />
+        <property name="Title" />
+        <property name="WorkPhone" />
+        <property name="CellPhone" />
+        <property name="HomePhone" />
+        <property name="IsKeyContact" />
+        <property name="Location" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="IsActive" />
+        <property name="DateCreated" />
+        <property name="LastUpdated" />
+        <property name="PrimaryEmail" />
+        <property name="MarkedForDeletion" />
+        <property name="AvatarPath"/>
+        <many-to-one name="ContactAccount" class="Insight.Core.Domain.Account, Insight.Core" column="AccountID" insert="false" update="false" cascade="none" />
+        <bag name="ContactEmail" table="ContactEmail" generic="true" inverse="true">
+            <key column="ContactID"/>
+            <many-to-many column="ID" class="Insight.Core.Domain.ContactEmail, Insight.Core" />
+        </bag>
+        <bag name="ContactAddress" table="ContactAddress" generic="true" inverse="true">
+            <key column="ContactID"/>
+            <many-to-many column="ID" class="Insight.Core.Domain.ContactAddress, Insight.Core" />
+        </bag>
+    </class>
+
+</hibernate-mapping>

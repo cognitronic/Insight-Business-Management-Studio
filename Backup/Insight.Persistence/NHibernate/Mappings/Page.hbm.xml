@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="Page" table="Page">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="Name" />
+        <property name="Title" />
+        <property name="URL" />
+        <property name="IsActive"  />
+        <property name="ParentID" />
+        <property name="IconPath" />
+        <property name="SortOrder" />
+        <property name="DateCreated" />
+        <property name="LastUpdated" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="URLRoute" />
+        <property name="ModuleID" />
+        <property name="PageTypeID" />
+        <property name="PageNavigationTypeID" column="NavigationTypeID" />
+    </class>
+
+</hibernate-mapping>

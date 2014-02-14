@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A4A5983-AB0F-4413-AEF5-96245FE4B9AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insight.Core</RootNamespace>
+    <AssemblyName>Insight.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdeaSeed.Core">
+      <HintPath>..\References\IdeaSeed.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IdeaSeed.Web">
+      <HintPath>..\References\IdeaSeed.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AddressType.cs" />
+    <Compile Include="Domain\ApplicationView.cs" />
+    <Compile Include="Domain\ApplicationViewLayout.cs" />
+    <Compile Include="Domain\BaseListFilter.cs" />
+    <Compile Include="Domain\EmailType.cs" />
+    <Compile Include="Domain\HistoryLink.cs" />
+    <Compile Include="Domain\Interfaces\Data\IApplicationViewRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IListFilterRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IModuleRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IModuleRoleRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IModuleUserRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IPageApplicationViewRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IPageRepository.cs" />
+    <Compile Include="Domain\Interfaces\Data\IUserRepository.cs" />
+    <Compile Include="Domain\Interfaces\IApplicationView.cs" />
+    <Compile Include="Domain\Interfaces\IBaseAccount.cs" />
+    <Compile Include="Domain\Interfaces\IBaseAddress.cs" />
+    <Compile Include="Domain\Interfaces\IBaseAttachment.cs" />
+    <Compile Include="Domain\Interfaces\IBaseContact.cs" />
+    <Compile Include="Domain\Interfaces\IBaseEmailAddress.cs" />
+    <Compile Include="Domain\Interfaces\IBaseEquipment.cs" />
+    <Compile Include="Domain\Interfaces\IBaseIndustryType.cs" />
+    <Compile Include="Domain\Interfaces\IBaseServiceLevelAgreement.cs" />
+    <Compile Include="Domain\Interfaces\IItemSearchProperty.cs" />
+    <Compile Include="Domain\Interfaces\IListFilter.cs" />
+    <Compile Include="Domain\Interfaces\ISearchCriterion.cs" />
+    <Compile Include="Domain\Interfaces\Services\IAccountServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IAttachmentServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IContactServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IEquipmentServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IIndustryTypeServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IServiceLevelAgreementServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\IUserServices.cs" />
+    <Compile Include="Domain\Item.cs" />
+    <Compile Include="Domain\ItemType.cs" />
+    <Compile Include="Domain\Module.cs" />
+    <Compile Include="Domain\ModuleRole.cs" />
+    <Compile Include="Domain\ModuleUser.cs" />
+    <Compile Include="Domain\Operators.cs" />
+    <Compile Include="Domain\Page.cs" />
+    <Compile Include="Domain\PageApplicationView.cs" />
+    <Compile Include="Domain\PageNavigationType.cs" />
+    <Compile Include="Domain\PageType.cs" />
+    <Compile Include="Domain\PageUser.cs" />
+    <Compile Include="Domain\ResourceStrings.cs" />
+    <Compile Include="Domain\IsSearchableAttribute.cs" />
+    <Compile Include="Domain\SearchCriterion.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserPreferences.cs" />
+    <Compile Include="Domain\Interfaces\IAuditable.cs" />
+    <Compile Include="Domain\Interfaces\IHasAddress.cs" />
+    <Compile Include="Domain\Interfaces\IItem.cs" />
+    <Compile Include="Domain\Interfaces\IModule.cs" />
+    <Compile Include="Domain\Interfaces\IModuleRole.cs" />
+    <Compile Include="Domain\Interfaces\IModuleUser.cs" />
+    <Compile Include="Domain\Interfaces\IPage.cs" />
+    <Compile Include="Domain\Interfaces\IPageApplicationView.cs" />
+    <Compile Include="Domain\Interfaces\IPageUser.cs" />
+    <Compile Include="Domain\Interfaces\IQuicklink.cs" />
+    <Compile Include="Domain\Interfaces\IUser.cs" />
+    <Compile Include="Domain\UserSearchProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\Interfaces\Services\IPageViewServices.cs" />
+    <Compile Include="Domain\Interfaces\Services\ISecurityServices.cs" />
+    <Compile Include="Security\AccessLevels.cs" />
+    <Compile Include="Security\ApplicationContext.cs" />
+    <Compile Include="Security\AuthenticationResponse.cs" />
+    <Compile Include="Security\ISecurityContext.cs" />
+    <Compile Include="Security\ISessionProvider.cs" />
+    <Compile Include="Security\SecurityContextManager.cs" />
+    <Compile Include="Security\SessionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

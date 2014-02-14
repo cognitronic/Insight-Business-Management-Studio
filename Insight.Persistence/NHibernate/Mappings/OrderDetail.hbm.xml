@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="OrderDetail" table="OrderDetails">
+        <id name="ID" column="orderdetailid">
+            <generator class="identity"></generator>
+        </id>
+        <property name="OrderID" column="orderheaderid" />
+        <property name="ProductID" />
+        <property name="Description"  />
+        <property name="Qty" />
+        <property name="DueDate" />
+        <property name="ETA" />
+        <property name="Cost" />
+        <property name="MarkUp" />
+        <property name="MarkUpType" />
+        <property name="EnteredBy" />
+        <property name="ChangedBy" />
+        <property name="TrackingNumber" />
+        <property name="VendorID" />
+        <property name="Received" />
+        <property name="Notes" />
+        <property name="ShippingCost" />
+        <property name="ShippingMarkup" />
+        <property name="Tax" />
+        <property name="VendorOrderNumber" />
+        <many-to-one name="Order" class="Insight.Core.Domain.Order, Insight.Core" column="OrderHeaderID" />
+        <many-to-one name="Product" class="Insight.Core.Domain.Product, Insight.Core" column="ProductID" />
+    </class>
+</hibernate-mapping>

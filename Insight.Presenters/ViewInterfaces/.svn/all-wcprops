@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces
+END
+IPageManagerView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IPageManagerView.cs
+END
+ILoginView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/ILoginView.cs
+END
+IUserListView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IUserListView.cs
+END
+IDashboardToolBarView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IDashboardToolBarView.cs
+END
+IQuicklinksView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IQuicklinksView.cs
+END
+IFilterOptionsCollectionView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IFilterOptionsCollectionView.cs
+END
+IPropertiesToolBarView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IPropertiesToolBarView.cs
+END
+IView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IView.cs
+END
+IFiltersPropertiesView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IFiltersPropertiesView.cs
+END
+IBasePropertiesView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IBasePropertiesView.cs
+END
+IUserPropertiesView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IUserPropertiesView.cs
+END
+IPropertiesView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IPropertiesView.cs
+END
+IListToolBarView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IListToolBarView.cs
+END
+IAdminDashboardView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IAdminDashboardView.cs
+END
+IUserHistoryLinksView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IUserHistoryLinksView.cs
+END
+IMasterPageHeaderView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IMasterPageHeaderView.cs
+END
+IBaseListView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Presenters/ViewInterfaces/IBaseListView.cs
+END

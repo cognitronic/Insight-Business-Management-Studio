@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain
+END
+PageUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/PageUser.cs
+END
+Page.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Page.cs
+END
+BaseListFilter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/BaseListFilter.cs
+END
+Operators.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Operators.cs
+END
+PageType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/PageType.cs
+END
+User.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/User.cs
+END
+HistoryLink.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/HistoryLink.cs
+END
+ModuleUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ModuleUser.cs
+END
+SearchCriterion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/SearchCriterion.cs
+END
+Module.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Module.cs
+END
+AddressType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/AddressType.cs
+END
+EmailType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/EmailType.cs
+END
+PageApplicationView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/PageApplicationView.cs
+END
+ApplicationViewLayout.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ApplicationViewLayout.cs
+END
+Item.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Item.cs
+END
+ApplicationView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ApplicationView.cs
+END
+PageNavigationType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/PageNavigationType.cs
+END
+ItemType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ItemType.cs
+END
+UserPreferences.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/UserPreferences.cs
+END
+ResourceStrings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ResourceStrings.cs
+END
+ModuleRole.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/ModuleRole.cs
+END
+IsSearchableAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/IsSearchableAttribute.cs
+END
+UserSearchProperty.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/UserSearchProperty.cs
+END

@@ -1,0 +1,7 @@
+D:\Projects\Insight\Insight.ConsoleApp\bin\Debug\Insight.ConsoleApp.exe
+D:\Projects\Insight\Insight.ConsoleApp\bin\Debug\Insight.ConsoleApp.pdb
+D:\Projects\Insight\Insight.ConsoleApp\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Insight\Insight.ConsoleApp\obj\Debug\Insight.ConsoleApp.exe
+D:\Projects\Insight\Insight.ConsoleApp\obj\Debug\Insight.ConsoleApp.pdb
+J:\Projects\Insight\Insight.ConsoleApp\obj\Debug\Insight.ConsoleApp.exe
+J:\Projects\Insight\Insight.ConsoleApp\obj\Debug\Insight.ConsoleApp.pdb

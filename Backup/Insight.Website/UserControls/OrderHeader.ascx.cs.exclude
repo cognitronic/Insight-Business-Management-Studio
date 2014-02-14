@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using IdeaSeed.Web.UI;
+using Insight.Core.Domain;
+using Insight.Persistence.Repositories;
+using Insight.Services;
+using System.Configuration;
+using System.Text;
+using Telerik.Web.UI;
+using IdeaSeed.Core.Web;
+using Insight.Web.WebControls;
+using Insight.Web.Utils;
+
+[ViewStateModeById]
+public partial class UserControls_OrderHeader : System.Web.UI.UserControl, IWebUserControl
+{
+    #region Properties
+    public Insight.Core.Domain.Page CurrentPage { get; set; }
+
+    public int CurrentUserID { get; set; }
+
+    #endregion
+
+    #region Events
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            ddlContacts.AccountID = HttpContextHelper.Get<Order>("CurrentOrder").AccountID.ToString();
+            ddlContacts.LoadContacts();
+            LoadData();
+        }
+    }
+
+    protected override void OnInit(EventArgs e)
+    {
+        base.OnInit(e);
+    }
+
+    protected void AccountsSelectedIndexChanged(object o, EventArgs e)
+    {
+        ddlContacts.AccountID = ddlAccounts.SelectedValue;
+        ddlContacts.LoadContacts();
+        ddlContacts.Text = "";
+    }
+
+    #endregion
+
+    #region Methods
+
+    public void LoadData()
+    {
+        var order = HttpContextHelper.Get<Order>("CurrentOrder");
+        lblID.Text = order.ID.ToString();
+        ddlAccounts.SelectedValue = order.AccountID.ToString();
+        ddlContacts.SelectedValue = order.AccountContactID.ToString();
+        ddlRequestedBy.SelectedValue = order.RequestedBy.ToString();
+        ddlStatus.SelectedValue = order.OrderStatusID.ToString();
+        cbIsTaxExempt.Checked = order.IsTaxExempt;
+        tbQuoteDueBy.DbSelectedDate = order.OrderDate;
+        tbEmailSubject.Text = order.Title;
+        tbClientPO.Text = order.ClientPO;
+        tbNotes.Text = order.Notes;
+        lblEnteredBy.Text = SalesUtilities.GetUserFullNameByUserID(order.EnteredBy);
+        lblUpdatedBy.Text = SalesUtilities.GetUserFullNameByUserID(order.ChangedBy);
+    }
+    #endregion
+}

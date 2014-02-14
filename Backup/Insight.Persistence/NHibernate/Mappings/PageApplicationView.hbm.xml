@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+assembly="Insight.Core"
+namespace="Insight.Core.Domain">
+    <class name="PageApplicationView" table="PageApplicationView">
+        <id name="ID" column="ID">
+            <generator class="identity"></generator>
+        </id>
+        <property name="PageID" />
+        <property name="ApplicationViewID" />
+        <property name="ViewLayout" column="ApplicationViewLayout"  />
+        <property name="SortOrder" />
+        <property name="ViewProperties" />
+        <many-to-one name="ApplicationView" class="Insight.Core.Domain.ApplicationView, Insight.Core" column="ApplicationViewID" insert="false" update="false" cascade="none" />
+    </class>
+</hibernate-mapping>

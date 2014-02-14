@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces
+END
+IBaseEquipment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseEquipment.cs
+END
+IModuleRole.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IModuleRole.cs
+END
+IPageUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IPageUser.cs
+END
+IBaseServiceLevelAgreement.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseServiceLevelAgreement.cs
+END
+IPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IPage.cs
+END
+IUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IUser.cs
+END
+IBaseIndustryType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseIndustryType.cs
+END
+IBaseAddress.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseAddress.cs
+END
+IHasAddress.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IHasAddress.cs
+END
+IListFilter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IListFilter.cs
+END
+IBaseAttachment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DPProjects/!svn/ver/447/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseAttachment.cs
+END
+ISearchCriterion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/ISearchCriterion.cs
+END
+IModuleUser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IModuleUser.cs
+END
+IModule.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IModule.cs
+END
+IBaseContact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseContact.cs
+END
+IBaseAccount.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseAccount.cs
+END
+IBaseEmailAddress.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IBaseEmailAddress.cs
+END
+IItemSearchProperty.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IItemSearchProperty.cs
+END
+IAuditable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IAuditable.cs
+END
+IQuicklink.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IQuicklink.cs
+END
+IPageApplicationView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IPageApplicationView.cs
+END
+IItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IItem.cs
+END
+IApplicationView.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Core/Domain/Interfaces/IApplicationView.cs
+END

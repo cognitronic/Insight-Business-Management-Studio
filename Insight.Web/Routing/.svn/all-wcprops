@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing
+END
+UserRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/UserRouteHandler.cs
+END
+UtilityRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/UtilityRouteHandler.cs
+END
+DefaultRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/DefaultRouteHandler.cs
+END
+ListViewRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/ListViewRouteHandler.cs
+END
+AdminRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/AdminRouteHandler.cs
+END
+RouteBuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/RouteBuilder.cs
+END
+ErrorRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/ErrorRouteHandler.cs
+END
+PageRouteHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DPProjects/!svn/ver/326/trunk/Insight/Insight.Web/Routing/PageRouteHandler.cs
+END
