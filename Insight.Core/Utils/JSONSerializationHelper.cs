@@ -30,6 +30,7 @@ namespace Insight.Core.Utils
                 obj = (T)serializer.ReadObject(ms);
                 ms.Close();
                 ms.Dispose();
+                
                 return obj;
             }
             return default(T);
