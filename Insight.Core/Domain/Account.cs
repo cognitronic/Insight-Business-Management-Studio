@@ -31,6 +31,7 @@ namespace Insight.Core.Domain
         public virtual User AccountManager { get; set; }
         public virtual object ItemReference { get; set; }
         public virtual string URL { get; set; }
+        
         //TODO: Create ServiceLevelAgreement property
         //public virtual ServiceLevelAgreement? AccountServiceLevelAgreement { get; set; }
 
